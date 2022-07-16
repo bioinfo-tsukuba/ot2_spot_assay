@@ -25,14 +25,14 @@ conda create -n autospot --file requirements.txt
 
 # Executing spot assay
 ```
-sh "shoda6/automatic_spotassay_pub/ot2_execute/run_spotassay.sh"
+sh "/automatic_spotassay_pub/ot2_execute/run_spotassay.sh"
 ```
 
 # Executing time-lapse scanning
 After spot assay is finished, set agar plates onto a flatbed scanner in a incubater.
 And execute following command in a desktop computer connected to the scanner.
 ```
-sh "shoda6/automatic_spotassay_pub/automatic_scan/scan_90min_epson_lower.sh"
+sh "/automatic_spotassay_pub/automatic_scan/scan_90min_epson_lower.sh"
 ```
 When the spots is saturated, you can finish this program by `Ctrl + c`.
 
@@ -40,12 +40,12 @@ When the spots is saturated, you can finish this program by `Ctrl + c`.
 Set region of interest (ROI) for each spot area.
 And execute following macro in your ImageJ/Fiji app.
 ```
-shoda6/automatic_spotassay_pub/quantification_with_imageJ
+/automatic_spotassay_pub/quantification_with_imageJ
 ```
 
 # Data analysis
 Execute following ipynb files in a laptop computer.
 ```
-shoda6/automatic_spotassay_pub/data_analysis/dataframe-converter.ipynb
-shoda6/automatic_spotassay_pub/data_analysis/vis_summary.ipynb
+/automatic_spotassay_pub/data_analysis/dataframe-converter.ipynb
+/automatic_spotassay_pub/data_analysis/vis_summary.ipynb
 ```
