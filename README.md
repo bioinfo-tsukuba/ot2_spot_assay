@@ -1,3 +1,7 @@
+# Paper information
+The preprint is available in bioRxiv.
+The title is [Automation of yeast spot assays using an affordable liquid handling robot](https://www.biorxiv.org/content/10.1101/2022.07.16.500326v1)
+
 # Automatic spotassay
 automation of yeast spot assay with Opentrons OT-2.
 See our paper for executing automatic spot assay.
@@ -19,19 +23,19 @@ Print STL files in the CAD directory.
 
 # Creating conda environment and installing packages in laptop computer (e.g. Macbook)
 Execute in Terminal App
-```
+``` bash
 conda create -n autospot --file requirements.txt
 ```
 
 # Executing spot assay
-```
+``` bash
 sh "/automatic_spotassay_pub/ot2_execute/run_spotassay.sh"
 ```
 
 # Executing time-lapse scanning
 After spot assay is finished, set agar plates onto a flatbed scanner in a incubater.
 And execute following command in a desktop computer connected to the scanner.
-```
+``` bash
 sh "/automatic_spotassay_pub/automatic_scan/scan_90min_epson_lower.sh"
 ```
 When the spots is saturated, you can finish this program by `Ctrl + c`.
